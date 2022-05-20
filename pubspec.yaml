@@ -1,0 +1,19 @@
+name: flutter_vesti_share
+description: Flutter Plugin for sharing contents to WhatsApp.
+version: 0.0.9
+homepage: https://github.com/walidyacoub/flutter_vesti_share
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: vesti.com.fluttershare
+        pluginClass: FlutterSharePlugin
+      ios:
+        pluginClass: FlutterVestiSharePlugin
